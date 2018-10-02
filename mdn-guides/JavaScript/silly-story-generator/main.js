@@ -1,5 +1,3 @@
-
-
 var nameField = document.getElementById("customname");
 nameField.focus();
 
@@ -21,5 +19,3 @@ function generateRandomStory() {
   para.appendChild(storyNode);
   para.style.visibility = "visible";
 }
-
-

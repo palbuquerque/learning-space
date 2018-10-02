@@ -8,7 +8,7 @@ function getName(string) {
   if (string === "") {
     string = "Bob";
   } else {
-    string = name;
+    string = string;
   }
   return string;
 }
@@ -28,9 +28,9 @@ function getWeight(bool) {
   var weightUS = Math.floor(Math.random() * 201) + 100;
   var weightUK = Math.floor(weightUS * 0.0714286);
   if (bool === true) {
-    x = weightUS + " pounds";
-  } else {
     x = weightUK + " stone";
+  } else {
+    x = weightUS + " pounds";
   }
   return x;
 }

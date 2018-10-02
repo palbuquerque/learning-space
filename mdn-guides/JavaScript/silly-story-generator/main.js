@@ -9,15 +9,9 @@ document
 
 function generateRandomStory() {
   var para = document.getElementsByClassName("story")[0];
-  if (para.childNodes.length > 0) {
-    para.removeChild(para.childNodes[0]);
-  }
-  var name = nameField.value;
-  if (name === "") {
-    name = "Bob";
-  } else {
-    name = name;
-  }
+  resetPara(para);
+  var input = nameField.value;
+  var name = getName(input);
   var uk = document.getElementById("uk").checked;
   var temp = getTemp(uk);
   var weight = getWeight(uk);
